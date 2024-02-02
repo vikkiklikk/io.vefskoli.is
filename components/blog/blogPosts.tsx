@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 interface Greeting {
-  id: string; // Adjust the type according to your actual data structure
+  id: string;
   greeting: string;
 }
 
