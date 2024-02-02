@@ -47,6 +47,7 @@ Code
 -MongoDB
 -Mongoose
 -Error handling
+-Greetings => Posts
 
 -File structure
 -Naming conventions
@@ -54,4 +55,7 @@ Code
 Features to add/fix
 -Edit/Delete
 -Add timestamp and a library to make it more readable
--Add a user ID to each post
+-Add a user ID to each post fetched form the db
+
+Git Repo: https://github.com/vikkiklikk/io.vefskoli.is
+Figma: https://www.figma.com/file/aAmiksOFbh5k3oOQ9Iow7V/module5?type=design&node-id=529-915&mode=design&t=8MVTYgGHUftryUFE-0
