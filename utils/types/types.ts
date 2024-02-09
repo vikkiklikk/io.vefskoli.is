@@ -1,4 +1,5 @@
 import { GuideType } from "@/models/guide";
+import { BlogType } from "@/models/blogs";
 import { ReturnType } from "@/models/return";
 import { UserWithIdType } from "@/models/user";
 import { ReviewType } from "@/models/review";
@@ -24,7 +25,14 @@ export type AggregatedGuide = {
   guide: GuideType;
   returnDate: Date;
   order: number;
-}
+};
+
+export type AggregatedBlog = {
+  _id: string;
+  title: string;
+  description: string;
+  blog: BlogType;
+};
 /* this is some crazy stuff from Chat GPT what works well but I don't need to use it after all
 type DeepOmit<T, K extends string | number | symbol> = T extends object
   ? {
@@ -33,4 +41,6 @@ type DeepOmit<T, K extends string | number | symbol> = T extends object
   : T;
 */
 
-export type OmitPassword = Omit<UserWithIdType, 'password'> & {password?:string};
+export type OmitPassword = Omit<UserWithIdType, "password"> & {
+  password?: string;
+};
